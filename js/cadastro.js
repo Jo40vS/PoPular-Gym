@@ -43,11 +43,12 @@ frm.addEventListener('submit',(e) => {
 
     if (valido) {
         const divSucesso = document.getElementById('sucesso');
+        const user = {email, senha};
+        localStorage.setItem("user", JSON.stringify(user));
         const frm = document.getElementById('form');
 
         divSucesso.classList.remove('oculto');
 
         frm.classList.add('oculto');
     }
-
 })
