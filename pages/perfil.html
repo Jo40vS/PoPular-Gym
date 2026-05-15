@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
+     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <div class="container">
     <form id="form-perfil">
         <div class="campo">
             <label for="name">Nome Completo:</label>
             <input type="text" id="inName" placeholder="Insira seu nome completo">
+            <span class="erro" id="erro-Name"></span>
         </div>
 
         <div class="campo">
             <label for="age">Idade:</label>
             <input type="number" id="inAge" placeholder="Insira sua idade">
+            <span class="erro" id="erro-Age"> </span>
         </div>
 
         <div class="campo">
@@ -23,16 +27,19 @@
                 <option value="masculino">masculino</option>
                 <option value="feminino">feminino</option>
             </select>
+            <span class="erro" id="erro-Sexo"></span>
         </div>
 
         <div class="campo">
             <label for="peso">Peso Kg:</label>
             <input type="number" id="inPeso" placeholder="Insira seu peso">
+            <span class="erro" id="erro-Peso"></span>
         </div>
 
         <div class="campo">
             <label for="altura">Altura Cm:</label>
             <input type="number" id="inAltura" placeholder="Digite sua altura">
+            <span class="erro" id="erro-Altura"></span>
         </div>
 
         <div class="campo">
@@ -43,11 +50,13 @@
                 <option value="condicionamento">condicionamento</option>
                 <option value="forca">forca</option>
             </select>
+            <span class="erro" id="erro-Objetivo"></span>
         </div>
 
         <div class="campo">
-            <input type="file" accept="image/twq">
+            <input type="file" accept="image/*">
         </div>
     </form>
+</div>
 </body>
 </html>
